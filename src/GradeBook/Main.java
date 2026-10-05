@@ -16,11 +16,27 @@ public class Main {
 		in.nextLine();
 		
 		while (grade > 0) {
-			System.out.println("Enter Grade:");
-	    	int grade = in.nextInt();
-			in.nextLine();
+			if (grade > 100) {
+				System.out.println("Not valid!");
+				in.nextLine();
+			} else {
+				
+				if {
+					
+				}
+				
+				
+				if {
+					
+				}
+			}
 		}
 		
+		
+		if (grade < 0) {
+			System.out.println("All done!");
+			in.nextLine();
+		}	
 		
 		
 		double average = sumOfGrades / numOfGrades;
