@@ -8,26 +8,31 @@ public class Main {
     	System.out.println("Enter grades (1-100). Enter -1 to stop.");
     	
     	
-    	int highest, lowest, numOfGrades, sumOfGrades, current;
+    	double grade = 0;
+    	int count = 0;
+    	double total = 0;
+    	double max = 0;
+    	double min = 100;
+    	double average = 0;
 
     	
     	System.out.println("Enter Grade:");
-    	int grade = in.nextInt();
+    	grade = in.nextDouble();
 		in.nextLine();
 		
-		while (grade > 0) {
+		while (grade >= 0) {
 			if (grade > 100) {
-				System.out.println("Not valid!");
+				System.out.println("Not valid! Please enter a different number.");
+				grade = in.nextDouble();
 				in.nextLine();
 			} else {
-				
-				if {
-					
+				total = total + grade;
+				count = count + 1;
+				if (grade>max) {
+					max = grade;
 				}
-				
-				
-				if {
-					
+				if (grade>min) {
+					min = grade;
 				}
 			}
 		}
@@ -38,10 +43,11 @@ public class Main {
 			in.nextLine();
 		}	
 		
+		System.out.println("Count: " + count);
+		System.out.println("Max: " + max);
+		System.out.println("Min: " + min);
+		average = total/count;
+		System.out.println("Average: " + average);
 		
-		double average = sumOfGrades / numOfGrades;
     	}
- 
-    
-    
-    }
+  }
